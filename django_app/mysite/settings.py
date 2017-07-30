@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'common',
     'house',
     'region',
+    'inquiry',
 
     'storages',  # django-storage
     'corsheaders',  # django-cors-headers
