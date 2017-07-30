@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'corsheaders',  # django-cors-headers
     'geoposition',  # django-geoposition
     'smart_selects',  # django-smart-selects
+    'nested_admin',
 ]
 
 MIDDLEWARE = [

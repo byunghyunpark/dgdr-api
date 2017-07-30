@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-30 09:14+0900\n"
+"POT-Creation-Date: 2017-07-30 23:01+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,154 +17,244 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: django_app/house/models.py:12 django_app/house/models.py:24
-msgid "name"
-msgstr ""
 
-#: django_app/house/models.py:15
+#: house/models.py:12 house/models.py:24 house/models.py:36 house/models.py:91
+#: house/models.py:119
+msgid "name"
+msgstr "이름"
+
+#: house/models.py:15
+msgid "Category"
+msgstr "공간 종류"
+
+#: house/models.py:16
+msgid "Categories"
+msgstr "공간 종류(들)"
+
+#: house/models.py:27
 msgid "Search tag"
 msgstr "검색 태그"
 
-#: django_app/house/models.py:16
+#: house/models.py:28
 msgid "Search tags"
 msgstr "검색 태그(들)"
 
-#: django_app/house/models.py:25
+#: house/models.py:37
 msgid "main photo"
 msgstr "메인 사진"
 
-#: django_app/house/models.py:26
+#: house/models.py:38
 msgid "introduction"
 msgstr "설명 문구"
 
-#: django_app/house/models.py:27
+#: house/models.py:39
 msgid "trading area"
 msgstr "관련 상권"
 
-#: django_app/house/models.py:28
+#: house/models.py:40
 msgid "opened date"
 msgstr "오픈 날짜"
 
-#: django_app/house/models.py:29
-msgid "capacity"
-msgstr "수용 인원"
-
-#: django_app/house/models.py:30
+#: house/models.py:41
 msgid "category"
 msgstr "공간 종류"
 
-#: django_app/house/models.py:34
+#: house/models.py:45
 msgid "city"
 msgstr "시"
 
-#: django_app/house/models.py:41
+#: house/models.py:52
 msgid "address"
 msgstr "주소"
 
-#: django_app/house/models.py:42
+#: house/models.py:53
 msgid "position"
 msgstr "위경도"
 
-#: django_app/house/models.py:44
+#: house/models.py:55
 msgid "common service"
 msgstr "공통 제공 서비스"
 
-#: django_app/house/models.py:45
+#: house/models.py:56
 msgid "private service"
 msgstr "개인 제공 서비스"
 
-#: django_app/house/models.py:46
+#: house/models.py:57
 msgid "transportation"
 msgstr "교통"
 
-#: django_app/house/models.py:47
+#: house/models.py:58
 msgid "accessibility"
 msgstr "접근성"
 
-#: django_app/house/models.py:48
+#: house/models.py:59
 msgid "amenity"
 msgstr "주변 편의시설"
 
-#: django_app/house/models.py:50
+#: house/models.py:61
 msgid "tag"
 msgstr "태그"
 
-#: django_app/house/models.py:51
+#: house/models.py:62
 msgid "sort score"
 msgstr "정렬 가산점"
 
-#: django_app/house/models.py:53
+#: house/models.py:64
 msgid "open"
 msgstr "노출"
 
-#: django_app/house/models.py:54
+#: house/models.py:65
 msgid "close"
 msgstr "미노출"
 
-#: django_app/house/models.py:55
+#: house/models.py:66
 msgid "ready"
 msgstr "준비중"
 
-#: django_app/house/models.py:57
+#: house/models.py:68
 msgid "status"
 msgstr "상태"
 
-#: django_app/house/models.py:61
+#: house/models.py:72
 msgid "House"
 msgstr "쉐어하우스"
 
-#: django_app/house/models.py:62
+#: house/models.py:73
 msgid "Houses"
 msgstr "쉐어하우스(들)"
 
-#: django_app/mysite/settings.py:124
+#: house/models.py:90 house/models.py:118
+msgid "house"
+msgstr "쉐어하우스"
+
+#: house/models.py:93
+msgid "man"
+msgstr "남자"
+
+#: house/models.py:94
+msgid "woman"
+msgstr "여자"
+
+#: house/models.py:96
+msgid "sex"
+msgstr "성별"
+
+#: house/models.py:97
+msgid "capacity"
+msgstr "수용인원"
+
+#: house/models.py:98
+msgid "area"
+msgstr "면적"
+
+#: house/models.py:99
+msgid "monthly rent"
+msgstr "월임대료"
+
+#: house/models.py:100
+msgid "monthly management fee"
+msgstr "월운영관리비"
+
+#: house/models.py:101
+msgid "prepayment utility charge"
+msgstr "선불 공과금"
+
+#: house/models.py:102
+msgid "deposit"
+msgstr "예치금"
+
+#: house/models.py:103
+msgid "moving month"
+msgstr "입주월"
+
+#: house/models.py:104
+msgid "availability"
+msgstr "신청가능"
+
+#: house/models.py:105 house/models.py:120 house/models.py:135
+msgid "Position"
+msgstr "위치"
+
+#: house/models.py:109
+msgid "Room"
+msgstr "객실"
+
+#: house/models.py:110
+msgid "Rooms"
+msgstr "객실(들)"
+
+#: house/models.py:124
+msgid "Photo group"
+msgstr "사진그룹"
+
+#: house/models.py:125
+msgid "Photo groups"
+msgstr "사진그룹(들)"
+
+#: house/models.py:133
+msgid "photo_group"
+msgstr "사진그룹"
+
+#: house/models.py:134
+msgid "photo"
+msgstr "사진"
+
+#: house/models.py:139
+msgid "House photo"
+msgstr "쉐어하우스 사진"
+
+#: house/models.py:140
+msgid "House photos"
+msgstr "쉐어하우스 사진(들)"
+
+#: mysite/settings.py:125
 msgid "Korean"
 msgstr "한국어"
 
-#: django_app/mysite/settings.py:125
+#: mysite/settings.py:126
 msgid "English"
 msgstr "영어"
 
-#: django_app/mysite/utils/models.py:10
+#: mysite/utils/models.py:10
 msgid "created date"
 msgstr "생성일"
 
-#: django_app/mysite/utils/models.py:11
+#: mysite/utils/models.py:11
 msgid "modified_date"
 msgstr "수정일"
 
-#: django_app/region/models.py:7
+#: region/models.py:7
 msgid "province name"
 msgstr "도시명"
 
-#: django_app/region/models.py:8 django_app/region/models.py:26
+#: region/models.py:8 region/models.py:26
 msgid "latitude"
 msgstr "위도"
 
-#: django_app/region/models.py:9 django_app/region/models.py:27
+#: region/models.py:9 region/models.py:27
 msgid "longitude"
 msgstr "경도"
 
-#: django_app/region/models.py:12
+#: region/models.py:12
 msgid "Province"
 msgstr "도시"
 
-#: django_app/region/models.py:13
+#: region/models.py:13
 msgid "Provinces"
 msgstr "도시(들)"
 
-#: django_app/region/models.py:22
+#: region/models.py:22
 msgid "province"
 msgstr "도시"
 
-#: django_app/region/models.py:25
+#: region/models.py:25
 msgid "city name"
 msgstr "상권명"
 
-#: django_app/region/models.py:30
+#: region/models.py:30
 msgid "City"
 msgstr "상권"
 
-#: django_app/region/models.py:31
+#: region/models.py:31
 msgid "Cities"
 msgstr "상권(들)"
