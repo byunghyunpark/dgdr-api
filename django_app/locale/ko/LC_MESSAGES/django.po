@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-30 09:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: django_app/house/models.py:12 django_app/house/models.py:24
+msgid "name"
+msgstr ""
+
+#: django_app/house/models.py:15
+msgid "Search tag"
+msgstr "검색 태그"
+
+#: django_app/house/models.py:16
+msgid "Search tags"
+msgstr "검색 태그(들)"
+
+#: django_app/house/models.py:25
+msgid "main photo"
+msgstr "메인 사진"
+
+#: django_app/house/models.py:26
+msgid "introduction"
+msgstr "설명 문구"
+
+#: django_app/house/models.py:27
+msgid "trading area"
+msgstr "관련 상권"
+
+#: django_app/house/models.py:28
+msgid "opened date"
+msgstr "오픈 날짜"
+
+#: django_app/house/models.py:29
+msgid "capacity"
+msgstr "수용 인원"
+
+#: django_app/house/models.py:30
+msgid "category"
+msgstr "공간 종류"
+
+#: django_app/house/models.py:34
+msgid "city"
+msgstr "시"
+
+#: django_app/house/models.py:41
+msgid "address"
+msgstr "주소"
+
+#: django_app/house/models.py:42
+msgid "position"
+msgstr "위경도"
+
+#: django_app/house/models.py:44
+msgid "common service"
+msgstr "공통 제공 서비스"
+
+#: django_app/house/models.py:45
+msgid "private service"
+msgstr "개인 제공 서비스"
+
+#: django_app/house/models.py:46
+msgid "transportation"
+msgstr "교통"
+
+#: django_app/house/models.py:47
+msgid "accessibility"
+msgstr "접근성"
+
+#: django_app/house/models.py:48
+msgid "amenity"
+msgstr "주변 편의시설"
+
+#: django_app/house/models.py:50
+msgid "tag"
+msgstr "태그"
+
+#: django_app/house/models.py:51
+msgid "sort score"
+msgstr "정렬 가산점"
+
+#: django_app/house/models.py:53
+msgid "open"
+msgstr "노출"
+
+#: django_app/house/models.py:54
+msgid "close"
+msgstr "미노출"
+
+#: django_app/house/models.py:55
+msgid "ready"
+msgstr "준비중"
+
+#: django_app/house/models.py:57
+msgid "status"
+msgstr "상태"
+
+#: django_app/house/models.py:61
+msgid "House"
+msgstr "쉐어하우스"
+
+#: django_app/house/models.py:62
+msgid "Houses"
+msgstr "쉐어하우스(들)"
+
+#: django_app/mysite/settings.py:124
+msgid "Korean"
+msgstr "한국어"
+
+#: django_app/mysite/settings.py:125
+msgid "English"
+msgstr "영어"
+
+#: django_app/mysite/utils/models.py:10
+msgid "created date"
+msgstr "생성일"
+
+#: django_app/mysite/utils/models.py:11
+msgid "modified_date"
+msgstr "수정일"
+
+#: django_app/region/models.py:7
+msgid "province name"
+msgstr "도시명"
+
+#: django_app/region/models.py:8 django_app/region/models.py:26
+msgid "latitude"
+msgstr "위도"
+
+#: django_app/region/models.py:9 django_app/region/models.py:27
+msgid "longitude"
+msgstr "경도"
+
+#: django_app/region/models.py:12
+msgid "Province"
+msgstr "도시"
+
+#: django_app/region/models.py:13
+msgid "Provinces"
+msgstr "도시(들)"
+
+#: django_app/region/models.py:22
+msgid "province"
+msgstr "도시"
+
+#: django_app/region/models.py:25
+msgid "city name"
+msgstr "상권명"
+
+#: django_app/region/models.py:30
+msgid "City"
+msgstr "상권"
+
+#: django_app/region/models.py:31
+msgid "Cities"
+msgstr "상권(들)"

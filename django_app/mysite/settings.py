@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import json
 import os
 
+from django.utils.translation import ugettext_lazy as _
+
 # Path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR = os.path.dirname(BASE_DIR)
@@ -118,6 +120,16 @@ GEOPOSITION_GOOGLE_MAPS_API_KEY = config['third-party']['google_map_key']
 
 # Internationalization
 LANGUAGE_CODE = 'ko-KR'
+LANGUAGES = [
+  ('ko', _('Korean')),
+  ('en', _('English')),
+]
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+
+# Time
 TIME_ZONE = 'Asia/Seoul'
 USE_I18N = True
 USE_L10N = True
