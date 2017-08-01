@@ -52,12 +52,14 @@ INSTALLED_APPS = [
     'house',
     'region',
     'inquiry',
+    'main',
 
     'storages',  # django-storage
     'corsheaders',  # django-cors-headers
     'geoposition',  # django-geoposition
     'smart_selects',  # django-smart-selects
     'nested_admin',
+    'adminsortable2',
 ]
 
 MIDDLEWARE = [

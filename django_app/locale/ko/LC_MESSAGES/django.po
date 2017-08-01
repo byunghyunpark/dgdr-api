@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 02:33+0900\n"
+"POT-Creation-Date: 2017-08-01 10:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgstr "사진그룹(들)"
 msgid "photo_group"
 msgstr "사진그룹"
 
-#: house/models.py:134
+#: house/models.py:134 main/models.py:9
 msgid "photo"
 msgstr "사진"
 
@@ -263,11 +263,75 @@ msgstr "입주 문의"
 msgid "Tenant inquiries"
 msgstr "입주 문의(들)"
 
-#: mysite/settings.py:126
+#: main/models.py:7
+msgid "title"
+msgstr "제목"
+
+#: main/models.py:8
+msgid "context"
+msgstr "내용"
+
+#: main/models.py:10
+msgid "link url"
+msgstr "링크주소"
+
+#: main/models.py:11 main/models.py:33 main/models.py:45
+msgid "my_order"
+msgstr "순서"
+
+#: main/models.py:15
+msgid "MainNews"
+msgstr "메인소식"
+
+#: main/models.py:16
+msgid "MainNewses"
+msgstr "메인소식(들)"
+
+#: main/models.py:21
+msgid "text"
+msgstr "텍스트"
+
+#: main/models.py:22
+msgid "is active"
+msgstr "활성화"
+
+#: main/models.py:25
+msgid "TopBanner"
+msgstr "상단베너"
+
+#: main/models.py:26
+msgid "TopBanners"
+msgstr "상단베너(들)"
+
+#: main/models.py:31 main/models.py:43
+msgid "question"
+msgstr "질문"
+
+#: main/models.py:32 main/models.py:44
+msgid "answer"
+msgstr "답변"
+
+#: main/models.py:37
+msgid "TenantFAQ"
+msgstr "입주자 FAQ"
+
+#: main/models.py:38
+msgid "TenantFAQs"
+msgstr "입주자 FAQ(들)"
+
+#: main/models.py:49
+msgid "PartnerFAQ"
+msgstr "파트너 FAQ"
+
+#: main/models.py:50
+msgid "PartnerFAQs"
+msgstr "파트너 FAQ(들)"
+
+#: mysite/settings.py:128
 msgid "Korean"
 msgstr "한국어"
 
-#: mysite/settings.py:127
+#: mysite/settings.py:129
 msgid "English"
 msgstr "영어"
 

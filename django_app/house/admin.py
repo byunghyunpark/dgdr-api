@@ -75,6 +75,20 @@ class HouseAdmin(nested_admin.NestedModelAdmin):
     list_display = (
         "id", "name", "opened_date", "capacity_count", "status"
     )
+    fieldsets = (
+        (None, {
+            'fields': ('name', 'main_photo', 'introduction', "trading_area", "opened_date", "category",)
+        }),
+        ("local info", {
+            'fields': ('province', 'city', 'address', 'position',)
+        }),
+        ("text info", {
+            'fields': ('common_service', 'private_service', 'transportation', 'accessibility', 'amenity',)
+        }),
+        ("etc", {
+            'fields': ('search_tag', 'status',)
+        })
+    )
 
 
 admin.site.register(Category, CategoryAdmin)
