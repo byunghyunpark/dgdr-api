@@ -21,13 +21,19 @@ CONF_DIR = os.path.join(ROOT_DIR, '.django-conf')
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
-# Debug mode
-DEBUG = True
+# Debug option
+debug = os.environ.get('DEBUG', '')
+if not debug:
+    debug = 'True'
+DEBUG = debug == 'True'
+print('DEBUG =', DEBUG)
 
 
 # Config
-config = json.loads(open(os.path.join(CONF_DIR, 'settings_debug.json')).read())
-
+if DEBUG:
+    config = json.loads(open(os.path.join(CONF_DIR, 'settings_debug.json')).read())
+else:
+    config = json.loads(open(os.path.join(CONF_DIR, 'settings_release.json')).read())
 
 # Secret
 SECRET_KEY = config['django']['secret_key']

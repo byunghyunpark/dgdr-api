@@ -1,6 +1,9 @@
+awscli==1.11.128
 boto3==1.4.4
-botocore==1.5.90
+botocore==1.5.91
+colorama==0.3.7
 Django==1.10
+django-admin-sortable2==0.6.14
 django-cors-headers==2.1.0
 django-geoposition==0.3.0
 django-nested-admin==3.0.19
@@ -11,8 +14,11 @@ jmespath==0.9.3
 olefile==0.44
 Pillow==4.2.1
 psycopg2==2.7.3
+pyasn1==0.3.1
 python-dateutil==2.6.1
 python-monkey-business==1.0.0
 pytz==2017.2
+PyYAML==3.12
+rsa==3.4.2
 s3transfer==0.1.10
 six==1.10.0
