@@ -19,5 +19,8 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^dgdr-admin/', admin.site.urls),
     url(r'^nested_admin/', include('nested_admin.urls')),
-    url(r'^chaining/', include('smart_selects.urls')),  # django-smart-selects
+    url(r'^chaining/', include('smart_selects.urls')),  # django-smart-selects,
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^house/', include('house.urls', namespace='house')),
+    url(r'^region/', include('region.urls', namespace='region')),
 ]

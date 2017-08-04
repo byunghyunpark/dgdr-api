@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'smart_selects',  # django-smart-selects
     'nested_admin',
     'adminsortable2',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -158,7 +159,6 @@ print('STATIC_S3 =', STATIC_S3)
 
 
 # AWS S3 settings for django-storages third party
-# http://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html#settings
 if not DEBUG or STATIC_S3:
     AWS_S3_OBJECT_PARAMETERS = {
         'CacheControl': 'max-age=86400',
@@ -192,3 +192,15 @@ else:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
     STATIC_URL = '/staticfiles/'
     MEDIA_URL = '/upload_files/'
+
+
+# Rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
+    # 'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.AcceptHeaderVersioning'
+}
