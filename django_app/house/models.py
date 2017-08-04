@@ -33,11 +33,11 @@ class SearchTag(models.Model):
 
 class House(TimeStampedModel):
     """Share house's key information."""
-    name = models.CharField(verbose_name=_("name"), max_length=30)
+    main_title = models.CharField(verbose_name=_("main title"), max_length=50)
+    house_name = models.CharField(verbose_name=_("house name"), max_length=30)
     main_photo = models.ImageField(verbose_name=_("main photo"), upload_to="house_main_photo")
     introduction = models.TextField(verbose_name=_("introduction"), blank=True, null=True)
-    trading_area = models.CharField(verbose_name=_("trading area"), max_length=50)
-    opened_date = models.DateField(verbose_name=_("opened date"))
+    opened_date_char = models.CharField(verbose_name=_("opened date char"), max_length=50)
     category = models.ForeignKey(verbose_name=_("category"), to=Category)
 
     province = models.ForeignKey(Province, on_delete=models.SET_NULL, blank=True, null=True)
@@ -59,21 +59,21 @@ class House(TimeStampedModel):
     amenity = models.TextField(verbose_name=_("amenity"), blank=True, null=True)
 
     search_tag = models.ManyToManyField(verbose_name=_("tag"), to=SearchTag, blank=True)
-    sort_score = models.IntegerField(verbose_name=_("sort score"), default=0)
     STATUS = (
         ("open", _("open")),
         ("close", _("close")),
         ("Ready", _("ready")),
     )
     status = models.CharField(verbose_name=_("status"), max_length=30, choices=STATUS, default="ready")
+    my_order = models.PositiveIntegerField(verbose_name=_("my_order"), default=0, blank=False, null=False)
 
     class Meta:
-        ordering = ("sort_score", )
+        ordering = ['my_order', ]
         verbose_name = _("House")
         verbose_name_plural = _("Houses")
 
     def __str__(self):
-        return self.name
+        return self.house_name
 
     @property
     def capacity_count(self):

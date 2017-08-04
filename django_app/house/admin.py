@@ -1,4 +1,7 @@
+from django.utils.translation import ugettext_lazy as _
+
 import nested_admin
+from adminsortable2.admin import SortableAdminMixin
 from django import forms
 from django.contrib import admin
 
@@ -69,15 +72,15 @@ class PhotoGroupInline(nested_admin.NestedTabularInline):
     extra = 0
 
 
-class HouseAdmin(nested_admin.NestedModelAdmin):
+class HouseAdmin(SortableAdminMixin, nested_admin.NestedModelAdmin):
     form = HouseForm
     inlines = [RoomInline, PhotoGroupInline, ]
     list_display = (
-        "id", "name", "opened_date", "capacity_count", "status"
+        "id", "house_name", "opened_date_char", "capacity_count", "status"
     )
     fieldsets = (
         (None, {
-            'fields': ('name', 'main_photo', 'introduction', "trading_area", "opened_date", "category",)
+            'fields': ("main_title", 'house_name', 'main_photo', 'introduction', "opened_date_char", "category",)
         }),
         ("local info", {
             'fields': ('province', 'city', 'address', 'position',)

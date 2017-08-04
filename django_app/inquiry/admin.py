@@ -16,7 +16,7 @@ class TenantInquiryAdmin(admin.ModelAdmin):
         'id', 'house', 'room',
         'moving_date', 'sex', 'name', 'phone_number', 'email', 'is_tenant', 'created_date'
     )
-    list_filter = ("house__name", "is_tenant", )
+    list_filter = ("house__house_name", "is_tenant", )
     search_fields = ("name", )
 
 

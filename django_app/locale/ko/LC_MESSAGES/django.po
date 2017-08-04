@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-01 10:37+0900\n"
+"POT-Creation-Date: 2017-08-04 10:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: house/models.py:12 house/models.py:24 house/models.py:36 house/models.py:91
-#: house/models.py:119 inquiry/models.py:12 inquiry/models.py:39
+#: house/models.py:12 house/models.py:24 house/models.py:91 house/models.py:119
+#: inquiry/models.py:12 inquiry/models.py:39
 msgid "name"
 msgstr "이름"
 
@@ -39,20 +39,24 @@ msgstr "검색 태그"
 msgid "Search tags"
 msgstr "검색 태그(들)"
 
+#: house/models.py:36
+msgid "main title"
+msgstr "메인문구"
+
 #: house/models.py:37
+msgid "house name"
+msgstr "지점명"
+
+#: house/models.py:38
 msgid "main photo"
 msgstr "메인 사진"
 
-#: house/models.py:38
+#: house/models.py:39
 msgid "introduction"
 msgstr "설명 문구"
 
-#: house/models.py:39
-msgid "trading area"
-msgstr "관련 상권"
-
 #: house/models.py:40
-msgid "opened date"
+msgid "opened date char"
 msgstr "오픈 날짜"
 
 #: house/models.py:41
@@ -61,7 +65,7 @@ msgstr "공간 종류"
 
 #: house/models.py:45
 msgid "city"
-msgstr "시"
+msgstr "상권"
 
 #: house/models.py:52 inquiry/models.py:15
 msgid "address"
@@ -95,25 +99,25 @@ msgstr "주변 편의시설"
 msgid "tag"
 msgstr "태그"
 
-#: house/models.py:62
-msgid "sort score"
-msgstr "정렬 가산점"
-
-#: house/models.py:64
+#: house/models.py:63
 msgid "open"
 msgstr "노출"
 
-#: house/models.py:65
+#: house/models.py:64
 msgid "close"
 msgstr "미노출"
 
-#: house/models.py:66
+#: house/models.py:65
 msgid "ready"
 msgstr "준비중"
 
-#: house/models.py:68 inquiry/models.py:22
+#: house/models.py:67 inquiry/models.py:22
 msgid "status"
 msgstr "상태"
+
+#: house/models.py:68 main/models.py:11 main/models.py:33 main/models.py:45
+msgid "my_order"
+msgstr "순서"
 
 #: house/models.py:72
 msgid "House"
@@ -275,10 +279,6 @@ msgstr "내용"
 msgid "link url"
 msgstr "링크주소"
 
-#: main/models.py:11 main/models.py:33 main/models.py:45
-msgid "my_order"
-msgstr "순서"
-
 #: main/models.py:15
 msgid "MainNews"
 msgstr "메인소식"
@@ -327,11 +327,11 @@ msgstr "파트너 FAQ"
 msgid "PartnerFAQs"
 msgstr "파트너 FAQ(들)"
 
-#: mysite/settings.py:128
+#: mysite/settings.py:134
 msgid "Korean"
 msgstr "한국어"
 
-#: mysite/settings.py:129
+#: mysite/settings.py:135
 msgid "English"
 msgstr "영어"
 
@@ -378,3 +378,12 @@ msgstr "상권"
 #: region/models.py:31
 msgid "Cities"
 msgstr "상권(들)"
+
+#~ msgid "capacity_count"
+#~ msgstr "수용인원 합계"
+
+#~ msgid "sort score"
+#~ msgstr "정렬 가산점"
+
+#~ msgid "trading area"
+#~ msgstr "관련 상권"
