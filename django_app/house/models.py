@@ -62,9 +62,10 @@ class House(TimeStampedModel):
     STATUS = (
         ("open", _("open")),
         ("close", _("close")),
-        ("Ready", _("ready")),
+        ("ready", _("ready")),
     )
     status = models.CharField(verbose_name=_("status"), max_length=30, choices=STATUS, default="ready")
+    is_main = models.BooleanField(verbose_name=_("is main"), default=False)
     my_order = models.PositiveIntegerField(verbose_name=_("my_order"), default=0, blank=False, null=False)
 
     class Meta:

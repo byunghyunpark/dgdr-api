@@ -19,5 +19,5 @@ class CityView(ListAPIView):
 
 class RegionView(ListAPIView):
     """"""
-    queryset = Province.objects.all
+    queryset = Province.objects.all()
     serializer_class = RegionSerializer
