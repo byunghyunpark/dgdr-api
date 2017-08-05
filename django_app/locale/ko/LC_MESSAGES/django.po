@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-05 15:48+0900\n"
+"POT-Creation-Date: 2017-08-05 16:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: house/models.py:12 house/models.py:24 house/models.py:92 house/models.py:120
-#: inquiry/models.py:12 inquiry/models.py:39
+#: inquiry/models.py:12 inquiry/models.py:40
 msgid "name"
 msgstr "이름"
 
@@ -111,7 +111,7 @@ msgstr "미노출"
 msgid "ready"
 msgstr "준비중"
 
-#: house/models.py:67 inquiry/models.py:22
+#: house/models.py:67 inquiry/models.py:23
 msgid "status"
 msgstr "상태"
 
@@ -131,19 +131,19 @@ msgstr "쉐어하우스"
 msgid "Houses"
 msgstr "쉐어하우스(들)"
 
-#: house/models.py:91 house/models.py:119 inquiry/models.py:47
+#: house/models.py:91 house/models.py:119 inquiry/models.py:48
 msgid "house"
 msgstr "쉐어하우스"
 
-#: house/models.py:94 inquiry/models.py:41
+#: house/models.py:94 inquiry/models.py:42
 msgid "man"
 msgstr "남자"
 
-#: house/models.py:95 inquiry/models.py:42
+#: house/models.py:95 inquiry/models.py:43
 msgid "woman"
 msgstr "여자"
 
-#: house/models.py:97 inquiry/models.py:44
+#: house/models.py:97 inquiry/models.py:45
 msgid "sex"
 msgstr "성별"
 
@@ -215,63 +215,67 @@ msgstr "쉐어하우스 사진"
 msgid "House photos"
 msgstr "쉐어하우스 사진(들)"
 
-#: inquiry/models.py:13 inquiry/models.py:45
+#: inquiry/models.py:13 inquiry/models.py:46
 msgid "phone number"
 msgstr "전화번호"
 
-#: inquiry/models.py:14 inquiry/models.py:46
+#: inquiry/models.py:14 inquiry/models.py:47
 msgid "email"
 msgstr "이메일"
 
-#: inquiry/models.py:16 inquiry/models.py:56
+#: inquiry/models.py:16 inquiry/models.py:57
 msgid "memo"
 msgstr "메모"
 
 #: inquiry/models.py:18
+msgid "waiting"
+msgstr "대기중"
+
+#: inquiry/models.py:19
 msgid "progress"
 msgstr "진행중"
 
-#: inquiry/models.py:19
+#: inquiry/models.py:20
 msgid "complete"
 msgstr "완료"
 
-#: inquiry/models.py:20
+#: inquiry/models.py:21
 msgid "cancel"
 msgstr "취소"
 
-#: inquiry/models.py:23
+#: inquiry/models.py:24
 msgid "inquiry route"
 msgstr "문의경로"
 
-#: inquiry/models.py:26
+#: inquiry/models.py:27
 msgid "Partner inquiry"
 msgstr "파트너 문의"
 
-#: inquiry/models.py:27
+#: inquiry/models.py:28
 msgid "Partner inquiries"
 msgstr "파트너 문의(들)"
 
-#: inquiry/models.py:49
+#: inquiry/models.py:50
 msgid "room"
 msgstr "방"
 
-#: inquiry/models.py:55
+#: inquiry/models.py:56
 msgid "moving date"
 msgstr "입주일"
 
-#: inquiry/models.py:57
+#: inquiry/models.py:58
 msgid "is tenant"
 msgstr "입주여부"
 
-#: inquiry/models.py:58
+#: inquiry/models.py:59
 msgid "is waiting"
 msgstr "대기 여부"
 
-#: inquiry/models.py:61
+#: inquiry/models.py:62
 msgid "Tenant inquiry"
 msgstr "입주 문의"
 
-#: inquiry/models.py:62
+#: inquiry/models.py:63
 msgid "Tenant inquiries"
 msgstr "입주 문의(들)"
 

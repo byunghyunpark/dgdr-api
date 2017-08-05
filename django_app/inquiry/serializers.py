@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from inquiry.models import TenantInquiry
+from inquiry.models import TenantInquiry, PartnerInquiry
 
 
 class TenantInquirySerializer(serializers.ModelSerializer):
@@ -33,6 +33,32 @@ class TenantInquirySerializer(serializers.ModelSerializer):
         instance = self.Meta.model.objects.create(
             house=house_obj,
             is_waiting=is_waiting,
+            **validated_data
+        )
+
+        return instance
+
+
+class PartnerInquirySerializer(serializers.ModelSerializer):
+    status = serializers.CharField(read_only=True)
+
+    class Meta:
+        model = PartnerInquiry
+        fields = (
+            'id',
+            'name',
+            'phone_number',
+            'email',
+            'address',
+            'memo',
+            'status',
+            'inquiry_route',
+        )
+
+    def create(self, validated_data):
+        instance = self.Meta.model.objects.create(
+            inquiry_route="Home page",
+            status="waiting",
             **validated_data
         )
 

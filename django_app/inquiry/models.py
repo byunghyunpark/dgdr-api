@@ -15,6 +15,7 @@ class PartnerInquiry(TimeStampedModel):
     address = models.CharField(verbose_name=_('address'), max_length=100)
     memo = models.TextField(verbose_name=_("memo"), blank=True, null=True)
     STATUS = (
+        ("waiting", _("waiting")),
         ("progress", _("progress")),
         ("complete", _("complete")),
         ("cancel", _("cancel")),
