@@ -15,6 +15,7 @@ class PartnerInquiry(TimeStampedModel):
     address = models.CharField(verbose_name=_('address'), max_length=100)
     memo = models.TextField(verbose_name=_("memo"), blank=True, null=True)
     STATUS = (
+        ("waiting", _("waiting")),
         ("progress", _("progress")),
         ("complete", _("complete")),
         ("cancel", _("cancel")),
@@ -44,7 +45,7 @@ class TenantInquiry(TimeStampedModel):
     sex = models.CharField(verbose_name=_("sex"), choices=SEX, max_length=20)
     phone_number = models.CharField(verbose_name=_("phone number"), max_length=20)
     email = models.EmailField(verbose_name=_("email"), max_length=100, blank=True, null=True)
-    house = models.ForeignKey(verbose_name=_("house"), to=House)
+    house = models.ForeignKey(verbose_name=_("house"), to=House, blank=True)
     room = ChainedForeignKey(
         verbose_name=_("room"),
         to=Room,
@@ -55,6 +56,7 @@ class TenantInquiry(TimeStampedModel):
     moving_date = models.DateField(verbose_name=_("moving date"))
     memo = models.TextField(verbose_name=_("memo"), blank=True, null=True)
     is_tenant = models.BooleanField(verbose_name=_("is tenant"), default=False)
+    is_waiting = models.BooleanField(verbose_name=_("is waiting"), default=False)
 
     class Meta:
         verbose_name = _("Tenant inquiry")

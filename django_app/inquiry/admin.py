@@ -14,10 +14,10 @@ class PartnerInquiryAdmin(admin.ModelAdmin):
 class TenantInquiryAdmin(admin.ModelAdmin):
     list_display = (
         'id', 'house', 'room',
-        'moving_date', 'sex', 'name', 'phone_number', 'email', 'is_tenant', 'created_date'
+        'moving_date', 'sex', 'name', 'phone_number', 'email', 'is_tenant', 'is_waiting', 'created_date'
     )
-    list_filter = ("house__house_name", "is_tenant", )
-    search_fields = ("name", )
+    list_filter = ("house__house_name", "is_tenant", "is_waiting")
+    search_fields = ("name", "phone_number")
 
 
 admin.site.register(PartnerInquiry, PartnerInquiryAdmin)

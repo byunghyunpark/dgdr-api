@@ -7,10 +7,13 @@ from house.serializers import HouseSerializer, HouseDetailSerializer
 
 class HouseView(ListAPIView):
     """"""
-    queryset = House.objects.all()
     serializer_class = HouseSerializer
     filter_backends = (DjangoFilterBackend, )
     filter_fields = ('city', 'is_main', )
+
+    def get_queryset(self):
+        result = House.objects.all().exclude(status="close")
+        return result
 
 
 class HouseDetailView(RetrieveAPIView):

@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^house/', include('house.urls', namespace='house')),
     url(r'^region/', include('region.urls', namespace='region')),
+    url(r'^inquiry/', include('inquiry.urls', namespace='inquiry')),
 ]
