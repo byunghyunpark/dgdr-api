@@ -39,7 +39,7 @@ class RoomSerializer(serializers.ModelSerializer):
             'pre_util_charge',
             'deposit',
             'moving_month',
-            'availability',
+            'is_open',
             # 'position',
         )
 

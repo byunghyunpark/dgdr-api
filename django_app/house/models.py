@@ -102,7 +102,7 @@ class Room(TimeStampedModel):
     pre_util_charge = models.IntegerField(verbose_name=_("prepayment utility charge"))
     deposit = models.IntegerField(verbose_name=_("deposit"))
     moving_month = models.IntegerField(verbose_name=_("moving month"))
-    availability = models.BooleanField(verbose_name=_("availability"), default=True)
+    is_open = models.BooleanField(verbose_name=_("is open"), default=True)
     position = models.PositiveSmallIntegerField(verbose_name=_("Position"), null=True)
 
     class Meta:
