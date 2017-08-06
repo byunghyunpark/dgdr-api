@@ -14,7 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+from django.conf.urls.static import static
 from django.contrib import admin
+
+from mysite import settings
 
 urlpatterns = [
     url(r'^dgdr-admin/', admin.site.urls),
@@ -24,4 +27,5 @@ urlpatterns = [
     url(r'^house/', include('house.urls', namespace='house')),
     url(r'^region/', include('region.urls', namespace='region')),
     url(r'^inquiry/', include('inquiry.urls', namespace='inquiry')),
-]
+    url(r'^main/', include('main.urls', namespace='main')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
