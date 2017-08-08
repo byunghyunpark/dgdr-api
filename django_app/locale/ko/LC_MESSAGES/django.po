@@ -1,0 +1,404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-05 16:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: house/models.py:12 house/models.py:24 house/models.py:92 house/models.py:120
+#: inquiry/models.py:12 inquiry/models.py:40
+msgid "name"
+msgstr "이름"
+
+#: house/models.py:15
+msgid "Category"
+msgstr "공간 종류"
+
+#: house/models.py:16
+msgid "Categories"
+msgstr "공간 종류(들)"
+
+#: house/models.py:27
+msgid "Search tag"
+msgstr "검색 태그"
+
+#: house/models.py:28
+msgid "Search tags"
+msgstr "검색 태그(들)"
+
+#: house/models.py:36
+msgid "main title"
+msgstr "메인문구"
+
+#: house/models.py:37
+msgid "house name"
+msgstr "지점명"
+
+#: house/models.py:38
+msgid "main photo"
+msgstr "메인 사진"
+
+#: house/models.py:39
+msgid "introduction"
+msgstr "설명 문구"
+
+#: house/models.py:40
+msgid "opened date char"
+msgstr "오픈 날짜"
+
+#: house/models.py:41
+msgid "category"
+msgstr "공간 종류"
+
+#: house/models.py:45
+msgid "city"
+msgstr "상권"
+
+#: house/models.py:52 inquiry/models.py:15
+msgid "address"
+msgstr "주소"
+
+#: house/models.py:53
+msgid "position"
+msgstr "위경도"
+
+#: house/models.py:55
+msgid "common service"
+msgstr "공통 제공 서비스"
+
+#: house/models.py:56
+msgid "private service"
+msgstr "개인 제공 서비스"
+
+#: house/models.py:57
+msgid "transportation"
+msgstr "교통"
+
+#: house/models.py:58
+msgid "accessibility"
+msgstr "접근성"
+
+#: house/models.py:59
+msgid "amenity"
+msgstr "주변 편의시설"
+
+#: house/models.py:61
+msgid "tag"
+msgstr "태그"
+
+#: house/models.py:63
+msgid "open"
+msgstr "노출"
+
+#: house/models.py:64
+msgid "close"
+msgstr "미노출"
+
+#: house/models.py:65
+msgid "ready"
+msgstr "준비중"
+
+#: house/models.py:67 inquiry/models.py:23
+msgid "status"
+msgstr "상태"
+
+#: house/models.py:68
+msgid "is main"
+msgstr "빠른입주 여부"
+
+#: house/models.py:69 main/models.py:11 main/models.py:33 main/models.py:45
+msgid "my_order"
+msgstr "순서"
+
+#: house/models.py:73
+msgid "House"
+msgstr "쉐어하우스"
+
+#: house/models.py:74
+msgid "Houses"
+msgstr "쉐어하우스(들)"
+
+#: house/models.py:91 house/models.py:119 inquiry/models.py:48
+msgid "house"
+msgstr "쉐어하우스"
+
+#: house/models.py:94 inquiry/models.py:42
+msgid "man"
+msgstr "남자"
+
+#: house/models.py:95 inquiry/models.py:43
+msgid "woman"
+msgstr "여자"
+
+#: house/models.py:97 inquiry/models.py:45
+msgid "sex"
+msgstr "성별"
+
+#: house/models.py:98
+msgid "capacity"
+msgstr "수용인원"
+
+#: house/models.py:99
+msgid "area"
+msgstr "면적"
+
+#: house/models.py:100
+msgid "monthly rent"
+msgstr "월임대료"
+
+#: house/models.py:101
+msgid "monthly management fee"
+msgstr "월운영관리비"
+
+#: house/models.py:102
+msgid "prepayment utility charge"
+msgstr "선불 공과금"
+
+#: house/models.py:103
+msgid "deposit"
+msgstr "예치금"
+
+#: house/models.py:104
+msgid "moving month"
+msgstr "입주월"
+
+#: house/models.py:105
+msgid "is open"
+msgstr "입주가능 여부"
+
+#: house/models.py:106 house/models.py:121 house/models.py:136
+msgid "Position"
+msgstr "위치"
+
+#: house/models.py:110
+msgid "Room"
+msgstr "객실"
+
+#: house/models.py:111
+msgid "Rooms"
+msgstr "객실(들)"
+
+#: house/models.py:125
+msgid "Photo group"
+msgstr "사진그룹"
+
+#: house/models.py:126
+msgid "Photo groups"
+msgstr "사진그룹(들)"
+
+#: house/models.py:134
+msgid "photo_group"
+msgstr "사진그룹"
+
+#: house/models.py:135 main/models.py:9
+msgid "photo"
+msgstr "사진"
+
+#: house/models.py:140
+msgid "House photo"
+msgstr "쉐어하우스 사진"
+
+#: house/models.py:141
+msgid "House photos"
+msgstr "쉐어하우스 사진(들)"
+
+#: inquiry/models.py:13 inquiry/models.py:46
+msgid "phone number"
+msgstr "전화번호"
+
+#: inquiry/models.py:14 inquiry/models.py:47
+msgid "email"
+msgstr "이메일"
+
+#: inquiry/models.py:16 inquiry/models.py:57
+msgid "memo"
+msgstr "메모"
+
+#: inquiry/models.py:18
+msgid "waiting"
+msgstr "대기중"
+
+#: inquiry/models.py:19
+msgid "progress"
+msgstr "진행중"
+
+#: inquiry/models.py:20
+msgid "complete"
+msgstr "완료"
+
+#: inquiry/models.py:21
+msgid "cancel"
+msgstr "취소"
+
+#: inquiry/models.py:24
+msgid "inquiry route"
+msgstr "문의경로"
+
+#: inquiry/models.py:27
+msgid "Partner inquiry"
+msgstr "파트너 문의"
+
+#: inquiry/models.py:28
+msgid "Partner inquiries"
+msgstr "파트너 문의(들)"
+
+#: inquiry/models.py:50
+msgid "room"
+msgstr "방"
+
+#: inquiry/models.py:56
+msgid "moving date"
+msgstr "입주일"
+
+#: inquiry/models.py:58
+msgid "is tenant"
+msgstr "입주여부"
+
+#: inquiry/models.py:59
+msgid "is waiting"
+msgstr "대기 여부"
+
+#: inquiry/models.py:62
+msgid "Tenant inquiry"
+msgstr "입주 문의"
+
+#: inquiry/models.py:63
+msgid "Tenant inquiries"
+msgstr "입주 문의(들)"
+
+#: main/models.py:7
+msgid "title"
+msgstr "제목"
+
+#: main/models.py:8
+msgid "context"
+msgstr "내용"
+
+#: main/models.py:10
+msgid "link url"
+msgstr "링크주소"
+
+#: main/models.py:15
+msgid "MainNews"
+msgstr "메인소식"
+
+#: main/models.py:16
+msgid "MainNewses"
+msgstr "메인소식(들)"
+
+#: main/models.py:21
+msgid "text"
+msgstr "텍스트"
+
+#: main/models.py:22
+msgid "is active"
+msgstr "활성화"
+
+#: main/models.py:25
+msgid "TopBanner"
+msgstr "상단베너"
+
+#: main/models.py:26
+msgid "TopBanners"
+msgstr "상단베너(들)"
+
+#: main/models.py:31 main/models.py:43
+msgid "question"
+msgstr "질문"
+
+#: main/models.py:32 main/models.py:44
+msgid "answer"
+msgstr "답변"
+
+#: main/models.py:37
+msgid "TenantFAQ"
+msgstr "입주자 FAQ"
+
+#: main/models.py:38
+msgid "TenantFAQs"
+msgstr "입주자 FAQ(들)"
+
+#: main/models.py:49
+msgid "PartnerFAQ"
+msgstr "파트너 FAQ"
+
+#: main/models.py:50
+msgid "PartnerFAQs"
+msgstr "파트너 FAQ(들)"
+
+#: mysite/settings.py:135
+msgid "Korean"
+msgstr "한국어"
+
+#: mysite/settings.py:136
+msgid "English"
+msgstr "영어"
+
+#: mysite/utils/models.py:10
+msgid "created date"
+msgstr "생성일"
+
+#: mysite/utils/models.py:11
+msgid "modified_date"
+msgstr "수정일"
+
+#: region/models.py:7
+msgid "province name"
+msgstr "도시명"
+
+#: region/models.py:8 region/models.py:26
+msgid "latitude"
+msgstr "위도"
+
+#: region/models.py:9 region/models.py:27
+msgid "longitude"
+msgstr "경도"
+
+#: region/models.py:12
+msgid "Province"
+msgstr "도시"
+
+#: region/models.py:13
+msgid "Provinces"
+msgstr "도시(들)"
+
+#: region/models.py:22
+msgid "province"
+msgstr "도시"
+
+#: region/models.py:25
+msgid "city name"
+msgstr "상권명"
+
+#: region/models.py:30
+msgid "City"
+msgstr "상권"
+
+#: region/models.py:31
+msgid "Cities"
+msgstr "상권(들)"
+
+#~ msgid "availability"
+#~ msgstr "신청가능"
+
+#~ msgid "capacity_count"
+#~ msgstr "수용인원 합계"
+
+#~ msgid "sort score"
+#~ msgstr "정렬 가산점"
+
+#~ msgid "trading area"
+#~ msgstr "관련 상권"
