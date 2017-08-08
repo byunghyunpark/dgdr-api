@@ -204,3 +204,37 @@ REST_FRAMEWORK = {
     ),
     # 'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.AcceptHeaderVersioning'
 }
+
+
+# logging
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'verbose': {
+            'format': 'api %(levelname)s time=%(asctime)s %(message)s path=%(filename)s func=%(funcName)s'
+        },
+        'simple': {
+            'format': 'api %(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'watchtower': {
+            'level': 'INFO',
+            'class': 'watchtower.CloudWatchLogHandler',
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['watchtower', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        }
+    }
+}
