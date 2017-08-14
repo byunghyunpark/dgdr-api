@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'nested_admin',
     'adminsortable2',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
