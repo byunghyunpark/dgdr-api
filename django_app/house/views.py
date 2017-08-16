@@ -9,7 +9,7 @@ class HouseView(ListAPIView):
     """"""
     serializer_class = HouseSerializer
     filter_backends = (DjangoFilterBackend, )
-    filter_fields = ('city', 'is_main', 'province', )
+    filter_fields = ('is_main', 'is_immediately', 'province', 'city', )
 
     def get_queryset(self):
         result = House.objects.all().exclude(status="close")

@@ -66,6 +66,7 @@ class House(TimeStampedModel):
     )
     status = models.CharField(verbose_name=_("status"), max_length=30, choices=STATUS, default="ready")
     is_main = models.BooleanField(verbose_name=_("is main"), default=False)
+    is_immediately = models.BooleanField(verbose_name=_("is immediately"), default=False)
     my_order = models.PositiveIntegerField(verbose_name=_("my_order"), default=0, blank=False, null=False)
 
     class Meta:
@@ -101,7 +102,7 @@ class Room(TimeStampedModel):
     month_manage_fee = models.IntegerField(verbose_name=_("monthly management fee"))
     pre_util_charge = models.IntegerField(verbose_name=_("prepayment utility charge"))
     deposit = models.IntegerField(verbose_name=_("deposit"))
-    moving_month = models.IntegerField(verbose_name=_("moving month"))
+    moving_month = models.CharField(verbose_name=_("moving month"), max_length=50)
     is_open = models.BooleanField(verbose_name=_("is open"), default=True)
     position = models.PositiveSmallIntegerField(verbose_name=_("Position"), null=True)
 
