@@ -45,6 +45,10 @@ CORS_ORIGIN_ALLOW_ALL = config['django']['cors_allow_all']
 CORS_ORIGIN_WHITELIST = config['django']['cors_white_list']
 
 
+# Session
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',

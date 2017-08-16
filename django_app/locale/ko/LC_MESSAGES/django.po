@@ -253,11 +253,11 @@ msgstr "문의경로"
 
 #: inquiry/models.py:27
 msgid "Partner inquiry"
-msgstr "파트너 문의"
+msgstr "계약관련 문의"
 
 #: inquiry/models.py:28
 msgid "Partner inquiries"
-msgstr "파트너 문의(들)"
+msgstr "계약관련 문의(들)"
 
 #: inquiry/models.py:50
 msgid "room"
@@ -277,11 +277,11 @@ msgstr "대기 여부"
 
 #: inquiry/models.py:62
 msgid "Tenant inquiry"
-msgstr "입주 문의"
+msgstr "입주관련 문의"
 
 #: inquiry/models.py:63
 msgid "Tenant inquiries"
-msgstr "입주 문의(들)"
+msgstr "입주관련 문의(들)"
 
 #: main/models.py:7
 msgid "title"
