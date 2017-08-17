@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from geoposition.fields import GeopositionField
 from smart_selects.db_fields import ChainedForeignKey
+from sortedm2m.fields import SortedManyToManyField
 
 from mysite.utils.models import TimeStampedModel
 from region.models import Province, City
@@ -58,7 +59,7 @@ class House(TimeStampedModel):
     accessibility = models.TextField(verbose_name=_("accessibility"), blank=True, null=True)
     amenity = models.TextField(verbose_name=_("amenity"), blank=True, null=True)
 
-    search_tag = models.ManyToManyField(verbose_name=_("tag"), to=SearchTag, blank=True)
+    search_tag = SortedManyToManyField(verbose_name=_("tag"), to=SearchTag, blank=True)
     STATUS = (
         ("open", _("open")),
         ("close", _("close")),
