@@ -76,11 +76,14 @@ class HouseAdmin(SortableAdminMixin, nested_admin.NestedModelAdmin):
     form = HouseForm
     inlines = [RoomInline, PhotoGroupInline, ]
     list_display = (
-        "id", "house_name", "opened_date_char", "capacity_count", "status"
+        "id", "house_name", "opened_date_char", "capacity_count", "status", 'is_main', 'is_immediately',
     )
     fieldsets = (
         (None, {
-            'fields': ("main_title", 'house_name', 'main_photo', 'introduction', "opened_date_char", "category",)
+            'fields': (
+                "main_title", 'house_name', 'main_photo', 'introduction', "opened_date_char", "category",
+                'is_main', 'is_immediately'
+            )
         }),
         ("local info", {
             'fields': ('province', 'city', 'address', 'position',)

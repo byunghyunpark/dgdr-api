@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-05 16:17+0900\n"
+"POT-Creation-Date: 2017-08-16 22:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: house/models.py:12 house/models.py:24 house/models.py:92 house/models.py:120
+#: house/models.py:12 house/models.py:24 house/models.py:93 house/models.py:121
 #: inquiry/models.py:12 inquiry/models.py:40
 msgid "name"
 msgstr "이름"
@@ -117,101 +117,105 @@ msgstr "상태"
 
 #: house/models.py:68
 msgid "is main"
+msgstr "메인노출 여부"
+
+#: house/models.py:69
+msgid "is immediately"
 msgstr "빠른입주 여부"
 
-#: house/models.py:69 main/models.py:11 main/models.py:33 main/models.py:45
+#: house/models.py:70 main/models.py:11 main/models.py:33 main/models.py:45
 msgid "my_order"
 msgstr "순서"
 
-#: house/models.py:73
+#: house/models.py:74
 msgid "House"
 msgstr "쉐어하우스"
 
-#: house/models.py:74
+#: house/models.py:75
 msgid "Houses"
 msgstr "쉐어하우스(들)"
 
-#: house/models.py:91 house/models.py:119 inquiry/models.py:48
+#: house/models.py:92 house/models.py:120 inquiry/models.py:48
 msgid "house"
 msgstr "쉐어하우스"
 
-#: house/models.py:94 inquiry/models.py:42
+#: house/models.py:95 inquiry/models.py:42
 msgid "man"
 msgstr "남자"
 
-#: house/models.py:95 inquiry/models.py:43
+#: house/models.py:96 inquiry/models.py:43
 msgid "woman"
 msgstr "여자"
 
-#: house/models.py:97 inquiry/models.py:45
+#: house/models.py:98 inquiry/models.py:45
 msgid "sex"
 msgstr "성별"
 
-#: house/models.py:98
+#: house/models.py:99
 msgid "capacity"
 msgstr "수용인원"
 
-#: house/models.py:99
+#: house/models.py:100
 msgid "area"
 msgstr "면적"
 
-#: house/models.py:100
+#: house/models.py:101
 msgid "monthly rent"
 msgstr "월임대료"
 
-#: house/models.py:101
+#: house/models.py:102
 msgid "monthly management fee"
 msgstr "월운영관리비"
 
-#: house/models.py:102
+#: house/models.py:103
 msgid "prepayment utility charge"
 msgstr "선불 공과금"
 
-#: house/models.py:103
+#: house/models.py:104
 msgid "deposit"
 msgstr "예치금"
 
-#: house/models.py:104
+#: house/models.py:105
 msgid "moving month"
 msgstr "입주월"
 
-#: house/models.py:105
+#: house/models.py:106
 msgid "is open"
 msgstr "입주가능 여부"
 
-#: house/models.py:106 house/models.py:121 house/models.py:136
+#: house/models.py:107 house/models.py:122 house/models.py:137
 msgid "Position"
 msgstr "위치"
 
-#: house/models.py:110
+#: house/models.py:111
 msgid "Room"
 msgstr "객실"
 
-#: house/models.py:111
+#: house/models.py:112
 msgid "Rooms"
 msgstr "객실(들)"
 
-#: house/models.py:125
+#: house/models.py:126
 msgid "Photo group"
 msgstr "사진그룹"
 
-#: house/models.py:126
+#: house/models.py:127
 msgid "Photo groups"
 msgstr "사진그룹(들)"
 
-#: house/models.py:134
+#: house/models.py:135
 msgid "photo_group"
 msgstr "사진그룹"
 
-#: house/models.py:135 main/models.py:9
+#: house/models.py:136 main/models.py:9
 msgid "photo"
 msgstr "사진"
 
-#: house/models.py:140
+#: house/models.py:141
 msgid "House photo"
 msgstr "쉐어하우스 사진"
 
-#: house/models.py:141
+#: house/models.py:142
 msgid "House photos"
 msgstr "쉐어하우스 사진(들)"
 
@@ -249,11 +253,11 @@ msgstr "문의경로"
 
 #: inquiry/models.py:27
 msgid "Partner inquiry"
-msgstr "파트너 문의"
+msgstr "계약관련 문의"
 
 #: inquiry/models.py:28
 msgid "Partner inquiries"
-msgstr "파트너 문의(들)"
+msgstr "계약관련 문의(들)"
 
 #: inquiry/models.py:50
 msgid "room"
@@ -273,11 +277,11 @@ msgstr "대기 여부"
 
 #: inquiry/models.py:62
 msgid "Tenant inquiry"
-msgstr "입주 문의"
+msgstr "입주관련 문의"
 
 #: inquiry/models.py:63
 msgid "Tenant inquiries"
-msgstr "입주 문의(들)"
+msgstr "입주관련 문의(들)"
 
 #: main/models.py:7
 msgid "title"
@@ -339,11 +343,11 @@ msgstr "파트너 FAQ"
 msgid "PartnerFAQs"
 msgstr "파트너 FAQ(들)"
 
-#: mysite/settings.py:135
+#: mysite/settings.py:136
 msgid "Korean"
 msgstr "한국어"
 
-#: mysite/settings.py:136
+#: mysite/settings.py:137
 msgid "English"
 msgstr "영어"
 
