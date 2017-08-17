@@ -9,6 +9,7 @@ django-filter==1.0.4
 django-geoposition==0.3.0
 django-nested-admin==3.0.19
 django-smart-selects==1.5.2
+django-sortedm2m==1.5.0
 django-storages==1.6.4
 djangorestframework==3.6.3
 docutils==0.13.1

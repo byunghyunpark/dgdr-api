@@ -45,6 +45,10 @@ CORS_ORIGIN_ALLOW_ALL = config['django']['cors_allow_all']
 CORS_ORIGIN_WHITELIST = config['django']['cors_white_list']
 
 
+# Session
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -53,6 +57,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'sortedm2m',
 
     'common',
     'house',
@@ -67,6 +73,7 @@ INSTALLED_APPS = [
     'nested_admin',
     'adminsortable2',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

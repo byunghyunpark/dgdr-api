@@ -137,6 +137,8 @@ class HouseSerializer(serializers.ModelSerializer):
             # 'amenity',
             'search_tag',
             'status',
+            'is_main',
+            'is_immediately',
 
             # 'my_order',
             # 'rooms',
